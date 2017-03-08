@@ -482,3 +482,6 @@ local.properties
 .DS_Store
 
 .idea/
+*.pyc
+*/migrations/*
+*.sqlite3

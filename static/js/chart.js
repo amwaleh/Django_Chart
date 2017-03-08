@@ -1,7 +1,7 @@
 /**
  * Created by alexmwaleh on 3/8/17.
  */
-var type ='polarArea';
+var type ='line';
 var vector =['line','radar'];
 var myChart;
 
@@ -29,7 +29,7 @@ function findData() {
                         datasets: [{
                             label: 'population',
                             data: res.data,
-                            backgroundColor: vector.includes(type) ? res.color[1] : res.color
+                            backgroundColor: vector.includes(type) ? res.color[0] : res.color
                         }]
                     }
 

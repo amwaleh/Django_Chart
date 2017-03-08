@@ -7,8 +7,8 @@
         <div class="content">
 
                 <div class="jumbotron"><H3>World Population</H3></div>
-            <div class="col-sm-10 col-lg-10 col-md-10" style="height: 500px">
-                <canvas id="myChart" style="width:100%;height:100% "></canvas>
+            <div class="col-sm-12 col-lg-10 col-md-12" style="height: 500px">
+                <canvas id="myChart" style="width:90%;height:100% "></canvas>
             </div>
 
 
@@ -16,8 +16,8 @@
             <br>
             <div style="margin-top: 20px;">
                 <div class="col-lg-6 col-lg-offset-2">
-                    <br><br><br>
-                    <h4 class="center">Chart type</h4>
+                    <br>
+
 
                     <div class="btn-group graph-type pull-right col-sm-12" role="group" aria-label="...">
                         <button type="button" class="btn btn-success">bar</button>
@@ -42,10 +42,14 @@
                             </tr>
                         {% endfor %}
                     </table>
+                    {% include './partials/pagination.html' %}
                 </div>
             </div>
         </div>
     </div>
+
+
+
     <script src="{% static 'js/chart.js' %}"></script>
 
     <style>
@@ -53,6 +57,18 @@
     .table {
         color: #123c51;
         background-color:rgba(181, 193, 182, 0.2);
+    }
+    .container {
+        background-color: rgba(210, 211, 209, 0.07);
+        box-shadow: inset 0px 0px 1px 0px #000;
+        padding:5px;
+        box-radius:10px;
+        border-radius: 14px;
+
+    }
+    .graph-type{
+       margin: 0 auto;
+        width:80%;
     }
     </style>
 {% endblock %}
