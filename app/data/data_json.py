@@ -1,0 +1,61 @@
+DATA = [{
+  "country": "Peru",
+  "population": 69
+}, {
+  "country": "Ecuador",
+  "population": 59
+}, {
+  "country": "Brazil",
+  "population": 39
+}, {
+  "country": "China",
+  "population": 21
+}, {
+  "country": "Iran",
+  "population": 69
+}, {
+  "country": "China",
+  "population": 38
+}, {
+  "country": "China",
+  "population": 38
+}, {
+  "country": "Philippines",
+  "population": 88
+}, {
+  "country": "Portugal",
+  "population": 21
+}, {
+  "country": "United States",
+  "population": 34
+}, {
+  "country": "Egypt",
+  "population": 85
+}, {
+  "country": "China",
+  "population": 81
+}, {
+  "country": "Greece",
+  "population": 26
+}, {
+  "country": "China",
+  "population": 84
+}, {
+  "country": "China",
+  "population": 46
+}, {
+  "country": "Belarus",
+  "population": 64
+}, {
+  "country": "China",
+  "population": 91
+}, {
+  "country": "Indonesia",
+  "population": 39
+}, {
+  "country": "Andorra",
+  "population": 75
+}, {
+  "country": "Honduras",
+  "population": 78
+}]
