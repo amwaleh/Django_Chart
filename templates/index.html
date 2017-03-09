@@ -3,7 +3,7 @@
 {% block  content %}
     {% include './partials/nav.html' %}
 
-    <div class="container">
+    <div class="container main">
         <div class="content">
 
                 <div class="jumbotron"><H3>World Population</H3></div>
@@ -52,24 +52,6 @@
 
     <script src="{% static 'js/chart.js' %}"></script>
 
-    <style>
 
-    .table {
-        color: #123c51;
-        background-color:rgba(181, 193, 182, 0.2);
-    }
-    .container {
-        background-color: rgba(210, 211, 209, 0.07);
-        box-shadow: inset 0px 0px 1px 0px #000;
-        padding:5px;
-        box-radius:10px;
-        border-radius: 14px;
-
-    }
-    .graph-type{
-       margin: 0 auto;
-        width:80%;
-    }
-    </style>
 {% endblock %}
 

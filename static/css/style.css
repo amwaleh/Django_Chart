@@ -1,0 +1,29 @@
+.navbar-inverse {
+    background-color: #053958;
+    border-color: #f3f7f8;
+    color: #FFF;
+    height: 50px;
+
+}
+.table {
+    color: #123c51;
+    background-color:rgba(159, 223, 230, 0.24);
+}
+.main {
+    padding: 5px;
+    border-radius: 4px;
+    border-color: rgba(204, 204, 204, 0.38);
+    border-width: thin;
+    box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.38);
+
+
+}
+.jumbotron{
+    background-color: #fff;
+    color:#616161;
+}
+
+.graph-type{
+    margin: 0 auto;
+    width:80%;
+}

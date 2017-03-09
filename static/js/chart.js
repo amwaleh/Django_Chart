@@ -1,13 +1,13 @@
 /**
  * Created by alexmwaleh on 3/8/17.
  */
-var type ='line';
-var vector =['line','radar'];
+var type = 'line';
+var vector = ['line', 'radar'];
 var myChart;
 
-$('.graph-type').on('click','button',function(){
+$('.graph-type').on('click', 'button', function () {
     myChart.destroy();
-    
+
     type = this.innerText;
     findData()
 
@@ -30,10 +30,17 @@ function findData() {
                             label: 'population',
                             data: res.data,
                             backgroundColor: vector.includes(type) ? res.color[0] : res.color
-                        }]
-                    }
+                        }]},
+                        options: {
+                            title: {
+                                display: true,
+                                text: 'Population  per country'
+                            }
 
-                });
+
+                        }
+
+                    });
                 window.addEventListener('resize', function () {
                     myChart.resize()
                 })
@@ -47,4 +54,4 @@ function findData() {
     );
 };
 
-findData()
+findData();
