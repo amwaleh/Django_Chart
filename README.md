@@ -11,6 +11,7 @@ clone this repo
 ```
 
 **Create a virtualenv**
+- Use virtualenv or virtualwrapper
 ### Install dependencies
 ```bash
     pip install -r requirements.txt
