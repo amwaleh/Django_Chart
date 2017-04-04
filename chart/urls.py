@@ -19,7 +19,7 @@ from app import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.ChartView.as_view()),
-    url(r'^api/$', views.data_analysis),
+    url(r'^$', views.index),
+    url(r'^graph/$', views.data_analysis),
 
 ]

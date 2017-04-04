@@ -1,14 +1,18 @@
 from django.db import models
 
 
-class Population(models.Model):
-    country = models.CharField(max_length=64)
+
+class Country(models.Model):
+    name = models.CharField(max_length=64, unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+class City(models.Model):
+    country = models.ForeignKey(Country)
     population = models.IntegerField()
+    city = models.CharField(max_length=64, default=None)
 
-
-class Ping(models.Model):
-    CHOICES =[('UP','UP'),('DOWN','DOWN')]
-    date = models.DateField()
-    Ping = models.TextField(max_length=25, choices=CHOICES)
-    name = models.TextField(max_length=64)
-
+    def __str__(self):
+        return '{} : {}'.format(self.city, self.population)

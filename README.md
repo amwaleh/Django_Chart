@@ -28,7 +28,7 @@ use fixture to load the data
 - Next, load sample data by running.
 ```Bash
 
-$ python manage.py loaddata app_population.json
+$ python manage.py loaddata app_sample_data.json
 
 ```
 - Start the server

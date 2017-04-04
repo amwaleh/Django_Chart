@@ -1,26 +1,15 @@
-/**
- * Created by alexmwaleh on 3/8/17.
- */
-var type = 'line';
-var vector = ['line', 'radar'];
+
+var type = 'bar'; // Set default chart as Bar chart
+var vector = ['line', 'radar']; // graphs that need one color
 var myChart;
 
-$('.graph-type').on('click', 'button', function () {
-    myChart.destroy();
-
-    type = this.innerText;
-    findData()
-
-})
-
-
+// Function for retreiving data and populating the chart
 function findData() {
     $.ajax({
             method: 'GET',
-            url: '/api/',
+            url: '/graph/',
             cache: false,
             success: function (res) {
-                console.log(res);
                 var ctx = document.getElementById("myChart");
                 myChart = new Chart(ctx, {
                     type: type || 'bar',
@@ -30,28 +19,32 @@ function findData() {
                             label: 'population',
                             data: res.data,
                             backgroundColor: vector.includes(type) ? res.color[0] : res.color
-                        }]},
+                        }
+                        ]},
                         options: {
                             title: {
                                 display: true,
-                                text: 'Population  per country'
+                                text: res.title,
+                            },
+                            legends :{
+                                display: false
                             }
-
-
                         }
-
                     });
-                window.addEventListener('resize', function () {
-                    myChart.resize()
-                })
             },
             error: function (err) {
                 console.log(err);
-
-
             }
         }
     );
 };
 
+// Handle click event
+$('.graph-type').on('click', 'button', function () {
+    myChart.destroy();
+    type = this.name;
+    findData();
+});
+
+// Auto generate the graph when page is loaded
 findData();
