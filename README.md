@@ -1,4 +1,5 @@
 ## Django_Charts
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ecb3bf6562344ceba60d52ad492ccdc0)](https://www.codacy.com/app/alex-mwaleh/Django_Chart?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=andela-amwaleh/Django_Chart&amp;utm_campaign=Badge_Grade)
 ![](https://cdn.scotch.io/15775/OQk6534nTPCqvZOaJg1I_Screen%20Shot%202017-03-20%20at%2012.42.55%20AM.png)
 This Django app uses a combination of chartJS and Ajax to generate Charts.
 
