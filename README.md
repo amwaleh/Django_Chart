@@ -1,5 +1,5 @@
 ## Graph
-
+![](https://cdn.scotch.io/15775/OQk6534nTPCqvZOaJg1I_Screen%20Shot%202017-03-20%20at%2012.42.55%20AM.png)
 This Django app uses chartjS to generate Graphs.
 
 
